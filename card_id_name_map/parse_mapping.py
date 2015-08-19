@@ -13,8 +13,6 @@ for name, set_list in data.iteritems():
         if card_id and card_name:
             mapping[card_id] = card_name
 
-import pdb; pdb.set_trace()
-
 with open('id_name_map.json', 'w+') as f:
     json.dump(mapping, f)
 
